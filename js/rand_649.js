@@ -13,5 +13,5 @@ for (i = 1; i <= 6; i++) {
                 }	
             }
 			
-document.getElementById("lotto649").innerHTML='開獎號碼:'+arr.sort(function(a, b){return a-b})
+document.getElementById("lotto649").innerHTML='開獎號碼:'+"&nbsp;"+arr.sort(function(a, b){return a-b})
 }
