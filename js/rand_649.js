@@ -2,8 +2,8 @@ function rand(max) {
   return Math.floor(Math.random() * max)+1;
 }
 
-let num = 49;
 function roll() {
+let num = 49;
 let arr = [];
 let random = rand(num);
 
