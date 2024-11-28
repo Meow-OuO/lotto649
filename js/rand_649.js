@@ -1,3 +1,7 @@
+function rand(max) {
+  return Math.floor(Math.random() * max) + 1;
+}
+
 function roll() {
   let num = 49;
   let arr = [];
