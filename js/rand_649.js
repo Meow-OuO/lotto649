@@ -13,5 +13,5 @@ function roll() {
     }
   }
 
-document.getElementById("lotto649").innerHTML = '開獎號碼:' + "&nbsp;" + arr.slice(0, 6).sort(function(a, b){ return a - b; }).join(",") + "&emsp;" + '特別號:' + arr[6];
+document.getElementById("lotto649").innerHTML = '開獎號碼:' + "&nbsp;" + arr.slice(0, 6).sort(function(a, b){ return a - b; }) + "&emsp;" + '特別號:' + arr[6];
 }
