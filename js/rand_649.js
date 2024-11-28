@@ -1,7 +1,3 @@
-function rand(max) {
-  return Math.floor(Math.random() * max) + 1;
-}
-
 function roll() {
   let num = 49;
   let arr = [];
@@ -13,9 +9,12 @@ function roll() {
     }
   }
 
-  arr.sort(function(a, b) {
+  let mainNumbers = arr.slice(0, 6);
+  mainNumbers.sort(function(a, b) {
     return a - b;
   });
 
-  document.getElementById("lotto649").innerHTML = '開獎號碼:' + "&nbsp;" + arr.slice(0, 6).join(",") + "&emsp;" + '特別號:' + arr[6];
+  let specialNumber = arr[6];
+
+  document.getElementById("lotto649").innerHTML = '開獎號碼:' + "&nbsp;" + mainNumbers.join(",") + "&emsp;" + '特別號:' + specialNumber;
 }
